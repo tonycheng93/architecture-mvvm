@@ -1,13 +1,16 @@
 package com.sky.architecture.data
 
 import androidx.room.Entity
+import androidx.room.TypeConverters
 import com.google.gson.annotations.SerializedName
+import com.sky.architecture.ArticleTypeConverters
 
 /**
 @author baocheng
 @date 2019/3/9
  */
-@Entity(primaryKeys = ["id"])
+@Entity(tableName = "article", primaryKeys = ["id"])
+@TypeConverters(ArticleTypeConverters::class)
 data class Article(
     @field:SerializedName("_id")
     val id: String,
@@ -26,5 +29,7 @@ data class Article(
     @field:SerializedName("used")
     val used: Boolean,
     @field:SerializedName("who")
-    val author: String
+    val author: String,
+    @field:SerializedName("images")
+    val images: List<String>
 )

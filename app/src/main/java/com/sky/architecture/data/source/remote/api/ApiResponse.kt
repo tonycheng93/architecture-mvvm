@@ -1,4 +1,4 @@
-package com.sky.architecture
+package com.sky.architecture.data.source.remote.api
 
 import retrofit2.Response
 

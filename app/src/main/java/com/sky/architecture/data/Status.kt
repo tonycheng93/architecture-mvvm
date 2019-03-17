@@ -1,4 +1,4 @@
-package com.sky.architecture
+package com.sky.architecture.data
 
 /**
 @author baocheng

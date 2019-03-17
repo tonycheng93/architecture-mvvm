@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">architecture-mvvm</string>
+
+    <string name="text_author">via %s</string>
 </resources>
